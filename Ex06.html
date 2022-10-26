@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0vh 3vw 0vh 5vw;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            max-width: 100vw;
+            height: 100vh;
+            justify-content: space-between;
+        }
+        .container-pt1, .container-pt2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .container-pt1{
+            width: 35vw;
+        }
+        .container .container-pt2{
+            width: 29vw;
+        }
+        .container .caixa{
+            width: 100px;
+            height: 100px;
+        }
+        .container .container-pt1 .caixa1{
+            background-color: burlywood;
+        }
+        .container .container-pt1 .caixa2{
+            background-color: gray;
+        }
+        .container .container-pt2 .caixa1{
+            background-color: orange;
+        }
+        .container .container-pt2 .caixa1{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-pt1">
+            <div class="caixa caixa1"></div>
+            <div class="caixa caixa2"></div>
+        </div>
+        <div class="container-pt2">
+            <div class="caixa caixa1"></div>
+            <div class="caixa caixa2"></div>
+        </div>
+    </div>
+</body>
+</html>

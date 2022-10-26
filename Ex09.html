@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            max-width: 92vw;
+            height: 92vh;
+            margin: 3vh 4vw 5vh 4vw;
+            justify-content: space-between;
+        }
+        .colunas{
+            display: flex;
+        }
+        .container .coluna1{
+            width: 50vw;
+            justify-content: space-between;
+        }
+        .container .coluna2{
+            justify-content: end;
+            width: 50vw;
+        }
+        .container .coluna3{
+            width: 92vw;
+            justify-content: space-between;
+        }
+        .container .caixas{
+            width: 100px;
+            height: 100px;
+        }
+        .container .coluna1 .caixa1{
+            background-color: burlywood;
+        }
+        .container .coluna1 .caixa2{
+            background-color: gray;
+        }
+        .container .coluna2 .caixa1{
+            background-color: red;
+        }
+        .container .coluna3 .caixa1{
+            background-color: orange;
+            position: relative;
+            left: 3%;
+        }
+        .container .coluna3 .caixa2{
+            background-color: red;
+            position: relative;
+            bottom: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coluna1 colunas">
+            <div class="caixas caixa1"></div>
+            <div class="caixas caixa2"></div>
+        </div>
+        <div class="coluna2 colunas">
+            <div class="caixas caixa1"></div>
+        </div>
+        <div class="coluna3 colunas">
+            <div class="caixas caixa1"></div>
+            <div class="caixas caixa2"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ex3</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .formatacao-container{
+        display: flex;
+        justify-content: end;
+        margin: 4vh;
+        height: 92vh;
+    }
+    .formatacao-container .container{
+        width: 50vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .colunas{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .coluna1{
+        justify-content: space-between;
+    }
+    .container .coluna2{
+        justify-content: center;
+    }
+    .container .caixa{
+        width: 100px;
+        height: 100px;
+    }
+    .coluna1 .caixa1{
+        background-color: gray;
+    }
+    .coluna1 .caixa2{
+        background-color: burlywood;
+    }
+    .coluna1 .caixa3{
+        background-color: orange;
+
+    }
+    .coluna2 .caixa1{
+        background-color: red;
+    }
+
+</style>
+</head>
+<body>
+    <div class="formatacao-container">
+        <div class="container">
+            <div class="coluna1 colunas">
+                <div class="caixa1 caixa"></div>
+                <div class="caixa2 caixa"></div>
+                <div class="caixa3 caixa"></div>
+            </div>
+            <div class="coluna2 colunas">
+                <div class="caixa1 caixa"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

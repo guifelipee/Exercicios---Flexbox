@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 92vh;
+            justify-content: space-around;
+            margin: 4vh;
+        }
+        .container .colunas{
+            display: flex;
+            flex-direction: column;
+        }
+        .container .coluna1{
+            justify-content: start;
+        }
+        .container .coluna2{
+            justify-content: space-between;
+        }
+        .container .coluna3{
+            justify-content: end;
+        }
+        .caixas{
+            width: 100px;
+            height: 100px;
+        }
+
+        .colunas .coluna1 .caixa1{
+            background-color: burlywood;
+        }
+        .colunas .coluna2 .caixa1{
+            background-color: gray;
+        }
+        .colunas .coluna2 .caixa2{
+            background-color: orange;
+        }
+        .colunas .coluna3 .caixa1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coluna1 colunas">
+            <div class="caixa1 caixas"></div>
+        </div>
+        <div class="coluna2 colunas">
+            <div class="caixa1 caixas"></div>
+            <div class="caixa2 caixas"></div>
+        </div>
+        <div class="coluna3 colunas">
+            <div class="caixa1 caixas"></div>
+        </div>
+    </div>
+</body>
+</html>

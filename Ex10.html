@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            margin: 11vh 9vw 9vh 6vw;
+            justify-content: space-between;
+        }
+        .container .colunas{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .caixas{
+            width: 60px;
+            height: 60px;
+        }
+        .container .coluna1 .caixa1{
+            background-color: burlywood;
+            position: relative;
+            bottom: 30%;
+        }
+        .container .coluna1 .caixa2{
+            background-color: gray;
+        }
+        .container .coluna1 .caixa3, .container .coluna2 .caixa3, .container .coluna3 .caixa1{
+            background-color: red;
+        }
+        .container .coluna2 .caixa1{
+            background-color: orange;
+        }
+        .container .coluna2 .caixa2{
+            background-color: orange;
+            position: relative;
+            top: 25%;
+            left: 3%;
+        }
+        .container .coluna3 .caixa2{
+            background-color: orange;
+            position: relative;
+            bottom: 45%;
+            right: 1%;
+        }
+        .container .coluna3 .caixa3{
+            background-color: red;
+            position: relative;
+            left: 1%;
+        }
+    </style>
+<body>
+        <div class="container">
+            <div class="colunas coluna1">
+                <div class="caixas caixa1"></div>
+                <div class="caixas caixa2"></div>
+                <div class="caixas caixa3"></div>
+            </div>
+            <div class="colunas coluna2">
+                <div class="caixas caixa1"></div>
+                <div class="caixas caixa2"></div>
+                <div class="caixas caixa3"></div>
+            </div>
+            <div class="colunas coluna3">
+                <div class="caixas caixa1"></div>
+                <div class="caixas caixa2"></div>
+                <div class="caixas caixa3"></div>
+            </div>
+        </div>
+</body>
+</html>

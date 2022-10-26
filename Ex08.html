@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            max-width: 100vw;
+            height: 92vh;
+            margin: 4vh 3vw 4vh 5vw;
+        }
+        .container .linha{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .container .linha1{
+            justify-content: start;
+        }
+        .container .linha2{
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .container .linha3{
+            justify-content: end;
+        }
+        .container .caixas{
+            width: 100px;
+            height: 100px;
+        }
+        .container .linha1 .caixa1{
+            background-color: burlywood;
+        }
+        .container .linha2 .caixa1{
+            background-color: gray;
+        }
+        .container .linha2 .caixa2{
+            background-color: orange;
+        }
+
+        .container .linha3 .caixa1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="linha1 linha">
+            <div class="caixas caixa1"></div>
+        </div>
+        <div class="linha2 linha">
+            <div class="caixas caixa1"></div>
+            <div class="caixas caixa2"></div>
+        </div>
+        <div class="linha3 linha">
+            <div class="caixas caixa1"></div>
+        </div>
+    </div>
+</body>
+</html>
